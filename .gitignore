@@ -1,3 +1,7 @@
 node_modules
 bin
 pkg
+fastly/terraform/.terraform/
+fastly/terraform/dev/.terraform/
+fastly/terraform/staging/.terraform/
+fastly/terraform/production/.terraform/
