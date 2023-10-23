@@ -1,16 +1,16 @@
-compute_name = "dev-unpkg.edgecompute.app"
+compute_name = "development-unpkg.edgecompute.app"
 
 compute_domains = [
   {
-    name = "dev-unpkg.edgecompute.app"
+    name = "development-unpkg.edgecompute.app"
   }
 ]
 
-vcl_name = "dev.polyfill.io"
+vcl_name = "dev-unpkg.jakechampion.name"
 vcl_backends = [
   {
     name                  = "compute_at_edge"
-    address               = "dev-unpkg.edgecompute.app"
+    address               = "development-unpkg.edgecompute.app"
     port                  = 443
     ssl_cert_hostname     = "*.edgecompute.app"
     auto_loadbalance      = false
@@ -18,7 +18,8 @@ vcl_backends = [
     first_byte_timeout    = 120000
     between_bytes_timeout = 120000
     error_threshold       = 0
-    override_host         = "dev-unpkg.edgecompute.app"
+    override_host         = "development-unpkg.edgecompute.app"
+    ssl_sni_hostname      = "development-unpkg.edgecompute.app"
     use_ssl               = true
   },
   {
@@ -32,6 +33,7 @@ vcl_backends = [
     between_bytes_timeout = 120000
     error_threshold       = 0
     override_host         = "unpkg.fly.dev"
+    ssl_sni_hostname      = "unpkg.fly.dev"
     use_ssl               = true
   }
 ]
@@ -39,6 +41,6 @@ vcl_backends = [
 
 vcl_domains = [
   {
-    name = "dev.polyfill.io"
+    name = "dev-unpkg.jakechampion.name"
   }
 ]

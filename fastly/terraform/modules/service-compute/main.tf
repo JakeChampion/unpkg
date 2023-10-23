@@ -12,6 +12,9 @@ resource "fastly_service_compute" "app" {
     name    = "npm"
     address = "registry.npmjs.org"
     port    = 443
+    use_ssl = true
+    override_host = "registry.npmjs.org"
+    ssl_cert_hostname = "registry.npmjs.org"
   }
 
   dynamic "domain" {

@@ -6,7 +6,7 @@ compute_domains = [
   }
 ]
 
-vcl_name = "staging.polyfill.io"
+vcl_name = "staging-unpkg.jakechampion.name"
 vcl_backends = [
   {
     name                  = "compute_at_edge"
@@ -19,6 +19,7 @@ vcl_backends = [
     between_bytes_timeout = 120000
     error_threshold       = 0
     override_host         = "staging-unpkg.edgecompute.app"
+    ssl_sni_hostname      = "staging-unpkg.edgecompute.app"
     use_ssl               = true
   },
   {
@@ -32,6 +33,7 @@ vcl_backends = [
     between_bytes_timeout = 120000
     error_threshold       = 0
     override_host         = "unpkg.fly.dev"
+    ssl_sni_hostname      = "unpkg.fly.dev"
     use_ssl               = true
   }
 ]
@@ -39,6 +41,6 @@ vcl_backends = [
 
 vcl_domains = [
   {
-    name = "staging.polyfill.io"
+    name = "staging-unpkg.jakechampion.name"
   }
 ]

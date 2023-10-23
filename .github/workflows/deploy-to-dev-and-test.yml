@@ -6,8 +6,8 @@ on:
 env:
   terraform_version: '1.1.7'
   terraform_working_dir: 'fastly/terraform/'
-  fastly_vcl_service_id: Fdjuo55xQs5UJbS1YdAC97
-  fastly_compute_service_id: bWg9qn0U1Tiagis9M0h1c0
+  fastly_vcl_service_id: pIonorqQT0KvDoVH0JPKv4
+  fastly_compute_service_id: 5eGQtYwQ7vDdgsE6XGYv64
   domain: dev-unpkg.jakechampion.name
 jobs:
   build:
