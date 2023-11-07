@@ -7,7 +7,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@fastly/js-compute": "3.7.2",
+    "@fastly/js-compute": "3.7.3",
     "hono": "^3.9.2",
     "util": "^0.12.5"
   },
