@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@fastly/js-compute": "3.7.3",
-    "hono": "^3.10.2",
+    "hono": "^3.10.4",
     "util": "^0.12.5"
   },
   "devDependencies": {
