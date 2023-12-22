@@ -8,17 +8,17 @@
   },
   "dependencies": {
     "@fastly/js-compute": "3.7.3",
-    "hono": "^3.11.8",
+    "hono": "^3.11.9",
     "util": "^0.12.5"
   },
   "devDependencies": {
     "@worker-tools/html": "^2.0.0-pre.13",
-    "date-fns": "^3.0.0",
+    "date-fns": "^3.0.6",
     "es-module-lexer": "^1.4.1",
     "eslint": "^8.56.0",
     "etag": "^1.8.1",
     "highlight.js": "^11.9.0",
-    "mrmime": "^1.0.1",
+    "mrmime": "^2.0.0",
     "pretty-bytes": "^6.1.1",
     "sort-by": "^1.2.0",
     "validate-npm-package-name": "^5.0.0"
