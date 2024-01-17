@@ -18,7 +18,7 @@ jobs:
         id: cache-key
         run: echo "CACHE_KEY=compute-package-$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
       - name: Restore compute-package from cache
-        uses: actions/cache@e12d46a63a90f2fae62d114769bbf2a179198b5c # pin@v3
+        uses: actions/cache@13aacd865c20de90d75de3b17ebe84f7a17d57d2 # pin@v3
         id: compute-package
         with:
           path: pkg/package.tar.gz
@@ -31,7 +31,7 @@ jobs:
           cli_version: '10.5.0'
       - if: steps.compute-package.outputs.cache-hit != 'true'
         run: fastly compute build --package-name package
-      - uses: actions/upload-artifact@c7d193f32edcb7bfad88892161225aeda64e9392 # pin@v3
+      - uses: actions/upload-artifact@1eb3cb2b3e0f29609092a73eb033bb759a334595 # pin@v3
         with:
           name: ${{ steps.cache-key.outputs.CACHE_KEY }}
           path: pkg/package.tar.gz
